@@ -3,12 +3,90 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+    .left {
+        float: left;
+        width: 50%;
+        height: 200px;
+        position: relative;
+        /* border: 1px solid rgb(200, 210, 218); */
+        /* background-color: grey; */
+    }
+    .right{
+        float: left;
+        height: 200px;
+        width: 50%;
+        position: relative;
+        /* border: 1px solid rgb(200, 210, 218); */
+    }
+    .header-image{
+        position: absolute;
+        top: 50px;
+        left:20px;
+    }
+    .infomation{
+        position: absolute;
+        top: 20px;
+        left: 200px;
+    }
+    .infomation-right{
+        position: absolute;
+        top: 20px;
+        left: 100px;
+    }
+    .infomation-detail{
+        position: absolute;
+        top: 20px;
+        right: 100px;
+    }
+    .infomation-right-detail{
+        position: absolute;
+        top: 20px;
+        right: 100px;
+    }
+    .infomation>ul>li{
+        margin: 15px;
+        font-size: 14px;
+    }
+    .infomation-right>ul>li{
+        margin: 15px;
+        font-size: 14px;
+    }
+    .infomation-detail>ul>li{
+        margin: 15px;
+        font-size: 14px;
+    }
+    .infomation-right-detail>ul>li{
+        margin: 15px;
+        font-size: 14px;
+    }
+    .model1{
+        position: relative;    
+        float: left;
+        width: 50%;
+        height: 50%;
+        /* border: 1px solid grey; */
+    }
+    .model1>img{
+        position: absolute;
+        left: 10%;
+        top: 10%;
+    }
+    .aboutlist{
+        position: absolute;
+        left: 50%;
+        top: 20%;
+    }
+    
+
+    </style>
+
 	<!-- reset.css是清楚我页面的默认样式 -->
 	<link rel="stylesheet" href="css/reset.css">
 	<!-- 二级页面的公共样式代码 -->
 	<link rel="stylesheet" href="css/common.css">
-	<!-- 自己独有的样式代码 -->
-	<link rel="stylesheet" href="css/allproducts.css">
+	<!-- 自己页面的独有样式 -->
+	<link rel="stylesheet" href="css/article.css">
 </head>
 <body>
 	<!-- header部分开始 -->
@@ -79,8 +157,8 @@
 				<li><a href="index.html">首页</a></li>
 				<li><a href="allproducts.html">所有产品</a></li>
 				<li><a href="blog.html">博客</a></li>
-				<li><a href="article.html">文章列表</a></li>
-				<li><a href="./personal.html">个人中心</a></li>
+                <li><a href="article.html">文章列表</a></li>
+				<li><a href="personal.html">个人中心</a></li>
 			</ul>
 			<a href="#" class="search"></a>
 			<div class="reg">
@@ -89,7 +167,7 @@
 					<div class="settle">
 						<p>3件商品 总计:¥1111</p>
             <div class="shop1"><a href="./购物车.html">去结算</a></div>
-     	</div>
+					</div>
 					<span class = "con">
 						3
 					</span>
@@ -103,7 +181,7 @@
 		</div>
 	</div>
 	<!-- header部分结束 -->
-	<div class="s_content">
+    <div class="s_content">
 		<div class="s_content_c inner_c">
 			<div class="s_info">
 				<div class="s_title">
@@ -112,182 +190,81 @@
 					</a>
 					&gt;
 					<span>
-						所有商品
+						个人中心
 					</span>
 				</div>
-				<div class="screen">
-					<table>
-						<tr class = "t1">
-							<th>品牌</th>
-							<td>
-								<a href="#">无印</a>
-								<a href="#">博朗</a>
-								<a href="#">花印</a>
-							</td>
-						</tr>
-						<tr class = "t2">
-							<th>类别</th>
-							<td>
-								<a href="#">不锈钢</a>
-								<a href="#">原料水泥</a>
-								<a href="#">塑料</a>
-								<a href="#">木质</a>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<div class="fun">
-					<div class="sort">
-						<span>排序：</span>
-						<a href="#" class="s1">
-							<i></i>销量
-						</a>
-						<a href="#" class="s2">
-							<i></i>价格
-						</a>
-						<a href="#" class="s3">
-							<i></i>上架时间
-						</a>
-					</div>
-					<div class="swi">
-						<span>仅显示有货：</span>
-						<a href="#">
-							<i></i>
-						</a>
-					</div>
-					<div class="total">
-						共<span>20</span>个商品
-					</div>
-				</div>
-				<div class="s_prod">
-					<ul class = "pub_pro">
-						<li>
-							<img src="images/img47.png" alt="">
-							<div class="cont">
-								<h3>不锈钢汤勺</h3>
-								<span>￥300</span>
-							</div>
-							<div class="mask">
-								<a href="#" class="btn">查看详情</a>
-							</div>
-						</li>
-						<li>
-							<img src="images/img41.png" alt="">
-							<div class="cont">
-								<h3>不锈钢汤勺</h3>
-								<span>￥300</span>
-							</div>
-							<div class="mask">
-								<a href="#" class="btn">查看详情</a>
-							</div>
-						</li>
-						<li>
-							<img src="images/img42.png" alt="">
-							<div class="cont">
-								<h3>不锈钢汤勺</h3>
-								<span>￥300</span>
-							</div>
-							<div class="mask">
-								<a href="#" class="btn">查看详情</a>
-							</div>
-						</li>
-						<li>
-							<img src="images/img43.png" alt="">
-							<div class="cont">
-								<h3>不锈钢汤勺</h3>
-								<span>￥300</span>
-							</div>
-							<div class="mask">
-								<a href="#" class="btn">查看详情</a>
-							</div>
-						</li>
-						<li>
-							<img src="images/img44.png" alt="">
-							<div class="cont">
-								<h3>不锈钢汤勺</h3>
-								<span>￥300</span>
-							</div>
-							<div class="mask">
-								<a href="#" class="btn">查看详情</a>
-							</div>
-						</li>
-						<li>
-							<img src="images/img46.png" alt="">
-							<div class="cont">
-								<h3>不锈钢汤勺</h3>
-								<span>￥300</span>
-							</div>
-							<div class="mask">
-								<a href="#" class="btn">查看详情</a>
-							</div>
-						</li>
-						<li>
-							<img src="images/img48.png" alt="">
-							<div class="cont">
-								<h3>不锈钢汤勺</h3>
-								<span>￥300</span>
-							</div>
-							<div class="mask">
-								<a href="#" class="btn">查看详情</a>
-							</div>
-						</li>
-						<li>
-							<img src="images/img49.png" alt="">
-							<div class="cont">
-								<h3>不锈钢汤勺</h3>
-								<span>￥300</span>
-							</div>
-							<div class="mask">
-								<a href="#" class="btn">查看详情</a>
-							</div>
-						</li>
-						<li>
-							<img src="images/img49.png" alt="">
-							<div class="cont">
-								<h3>不锈钢汤勺</h3>
-								<span>￥300</span>
-							</div>
-							<div class="mask">
-								<a href="#" class="btn">查看详情</a>
-							</div>
-						</li>
-						<li>
-							<img src="images/img47.png" alt="">
-							<div class="cont">
-								<h3>不锈钢汤勺</h3>
-								<span>￥300</span>
-							</div>
-							<div class="mask">
-								<a href="#" class="btn">查看详情</a>
-							</div>
-						</li>
-						<li>
-							<img src="images/img47.png" alt="">
-							<div class="cont">
-								<h3>不锈钢汤勺</h3>
-								<span>￥300</span>
-							</div>
-							<div class="mask">
-								<a href="#" class="btn">查看详情</a>
-							</div>
-						</li>
-						<li>
-							<img src="images/img47.png" alt="">
-							<div class="cont">
-								<h3>不锈钢汤勺</h3>
-								<span>￥300</span>
-							</div>
-							<div class="mask">
-								<a href="#" class="btn">查看详情</a>
-							</div>
-						</li>
-					</ul>
-				</div>
+				<div class="article">
+					<div class="left">
+                        <div class="header-image">
+                           <img src="images/header.jpg" alt="" width="100px" height="100px">     
+                        </div>
+                        <div class="infomation">
+                            
+                            <ul>
+                                <li>用户账号</li>
+                                <li>用户昵称</li>
+                                <li>绑定手机</li>
+                                <li>绑定邮箱</li>
+                            </ul>
+                        </div>
+                        <div class="infomation-detail">
+                            <ul>
+                                <li>123456789</li>
+                                <li>userno1<li>
+                                <li style="color: rgb(38, 87, 194);">1773582363</li>
+                                <li>13265688@162.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="infomation-right">
+                            
+                            <ul>
+                                <li>联系方式</li>
+                                <li>收货地址</li>
+                            </ul>
+                        </div>
+                        <div class="infomation-right-detail">
+                            <ul>
+                                <li style="color: rgb(38, 87, 194);">18889028111</li>
+                                <li><textarea rows="3" cols="30">杭州市下沙高教园区2号大街928号</textarea><li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-top: 1px solid rgb(212, 203, 203) ;width:100%;height: 400px;" class="models">
+                    <div class="model1">
+                            <img src="./images/订单-待支付.png" alt="" style="width: 120px;height: 120px;">
+                            <div class="aboutlist">
+                                <h4 style="color: silver;margin: 15px;" >待支付的订单：  <span style="color: tomato;">0</span></h4>
+                                <p style="color: royalblue;margin: 15px;" >查看待支付的订单：  <span style="color:royalblue">></span></p>
+                            </div>
+                    </div>
+                    <div class="model1">
+                        <img src="./images/待发 货.png" alt="" style="width: 120px;height: 120px;">
+                        <div class="aboutlist">
+                            <h4 style="color: silver;margin: 15px;" >待发货的订单：  <span style="color: tomato;">0</span></h4>
+                            <p style="color: royalblue;margin: 15px;" >查看待发货的订单：  <span style="color:royalblue">></span></p>
+                        </div>
+                    </div>
+                    <div class="model1">
+                        <img src="./images/待评价.png" alt="" style="width: 120px;height: 120px;">
+                        <div class="aboutlist">
+                            <h4 style="color: silver;margin: 15px;" >待评价的订单：  <span style="color: tomato;">0</span></h4>
+                            <p style="color: royalblue;margin: 15px;" >查看待评价的订单：  <span style="color:royalblue">></span></p>
+                        </div>
+                    </div>
+                    <div class="model1">
+                        <img src="./images/我喜欢-01.svg" alt="" style="width: 120px;height: 120px;">
+                        <div class="aboutlist">
+                            <h4 style="color: silver;margin: 15px;" >我喜欢的商品：  <span style="color: tomato;">0</span></h4>
+                            <p style="color: royalblue;margin: 15px;" >查看收藏商品：  <span style="color:royalblue">></span></p>
+                        </div>
+                    </div>
+                </div>
 				<div class="pages">
-					<a href="#">&lt;</a>
-					<a href="#" class = "tol cur">1</a>
-					<a href="#" class = "tol ">2</a>
-					<a href="#">&gt;</a>
+					<span>&lt;</span><a href="#">1</a><span>&gt;</span>
 				</div>
 			</div>
 		</div>
@@ -450,4 +427,3 @@
 		<a href="#" class = "top_c">↑</a>
 	</div>
 </body>
-</html>
